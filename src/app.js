@@ -298,7 +298,7 @@ const btnGenerate = document.getElementById("btn-generate");
 const promptOutputBox = document.getElementById("prompt-output-box");
 const btnCopyPrompt = document.getElementById("btn-copy-prompt");
 const btnGemini = document.getElementById("btn-gemini");
-const btnShare = document.getElementById("btn-share");
+const btnCopyMain = document.getElementById("btn-copy-main");
 const btnDownload = document.getElementById("btn-download");
 
 // Preview States
@@ -328,7 +328,7 @@ document.addEventListener("DOMContentLoaded", () => {
   btnGenerate.addEventListener("click", generatePromptAndImage);
   btnCopyPrompt.addEventListener("click", () => copyToClipboard(currentPromptText, "પ્રોમ્પ્ટ કોપી થઈ ગયો છે!"));
   btnGemini.addEventListener("click", copyAndOpenGemini);
-  btnShare.addEventListener("click", generateShareLink);
+  btnCopyMain.addEventListener("click", () => copyToClipboard(currentPromptText, "પ્રોમ્પ્ટ કોપી થઈ ગયો છે!"));
   btnClearHistory.addEventListener("click", clearAllHistory);
   btnRetryPreview.addEventListener("click", generatePromptAndImage);
 
@@ -537,7 +537,7 @@ function validateFormInputs() {
   // Disable prompt sharing and Copy if inputs aren't valid
   btnCopyPrompt.disabled = !isValid;
   btnGemini.disabled = !isValid;
-  btnShare.disabled = !isValid;
+  btnCopyMain.disabled = !isValid;
   
   return isValid;
 }
