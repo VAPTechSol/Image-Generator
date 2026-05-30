@@ -1,0 +1,13 @@
+{
+  "name": "baps-bal-mandal-image-generator",
+  "version": "1.0.0",
+  "description": "A fun and child-safe AI Image prompt generator and previewer for BAPS Bal Mandal.",
+  "scripts": {
+    "dev": "vite --port 3000 --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
