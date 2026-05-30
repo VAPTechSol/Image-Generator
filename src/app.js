@@ -399,7 +399,7 @@ function renderFormFields() {
       if (placeholder.key === "date") input.value = "૩૧ મે, ૨૦૨૬";
       if (placeholder.key === "day") input.value = "રવિવાર";
       if (placeholder.key === "time") input.value = "સાંજે ૪:૩૦ થી ૬:૦૦";
-      if (placeholder.key === "venue") input.value = "સ્વામિનારાયણ મંદિર, વડાજ";
+      if (placeholder.key === "venue") input.value = "સ્વામિનારાયણ મંદિર, વાડાજ";
       if (placeholder.key === "attr1") input.value = "રસપ્રદ રમત ગમત";
       if (placeholder.key === "attr2") input.value = "";
       if (placeholder.key === "attr3") input.value = "";
